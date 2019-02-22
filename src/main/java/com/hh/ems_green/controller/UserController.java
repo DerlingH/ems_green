@@ -18,6 +18,8 @@ public class UserController {
     @ResponseBody
     public Object login(String username, String password) {
 
+        System.out.println("哈哈哈哈");
+
         HashMap<String, String> map = new HashMap<String, String>();
         Boolean b = userService.login(username, password);
         if (b) {
